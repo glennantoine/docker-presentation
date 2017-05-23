@@ -1,0 +1,48 @@
+{
+  "name": "docker-presentation",
+  "version": "0.1.0",
+  "description": "Docker Introduction for Developers",
+  "homepage": "",
+  "subdomain": "",
+  "scripts": {
+    "test": "grunt test",
+    "start": ""
+  },
+  "author": {
+    "name": "Glenn Antoine",
+    "email": "me@glennantoine.com",
+    "web": "http://glennantoine.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rgantoine"
+  },
+  "engines": {
+    "node": "~6.10"
+  },
+  "dependencies": {
+    "express": "latest",
+    "mustache": "latest",
+    "socket.io": "latest",
+    "underscore": "latest"
+  },
+  "devDependencies": {
+    "grunt-contrib-qunit": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-sass": "latest",
+    "grunt-contrib-connect": "latest",
+    "grunt-autoprefixer": "latest",
+    "grunt-zip": "latest",
+    "grunt": "latest",
+    "node-sass": "latest"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/rgantoine/"
+    }
+  ]
+}
