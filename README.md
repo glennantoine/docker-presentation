@@ -6,6 +6,7 @@ There are several ways to access this presentation:
 2) Clone the repository, and run docker or docker-compose as per the directions below
 3) Browse to http://play-with-docker.com follow either step above
 
+---
 For example: 
 * Browse to http://play-with-docker.com
 * Start an instance
@@ -14,10 +15,11 @@ For example:
 * docker-compose up -d
 
 
-Running Multiple docker nginx images 
-* Note: If using Play-with-Docker the exposed ports will be displayed near the top of the page 
+### Running Multiple docker nginx images 
+* Note: If using Play-with-Docker the available ports will be displayed near the top of the page 
 
-Without docker-compose:
+--- 
+#### Without docker-compose:
 ```bash
 # build images
 docker build --tag app1_presentation  --file Dockerfile.app1 .
@@ -45,8 +47,8 @@ docker rm app1_presentation app2_demosite
 # remove image
 docker rmi app1_presentation app2_demosite
 ```
-
-With docker-compose:
+--- 
+#### With docker-compose:
 ```bash
 # create and start containers
 docker-compose up -d
@@ -66,8 +68,8 @@ curl -s http://localhost:8082
 docker-compose stop
 docker-compose rm -f
 ```
-
-Cleaning Up your local docker environment:
+--- 
+#### Cleaning Up your local docker environment:
 ```bash
 
 # Generally safe cleanup commands
