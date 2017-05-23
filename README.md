@@ -1,7 +1,20 @@
 Docker Presentation: docker-nginx
 =================================
 
-Multiple docker nginx images 
+There are several ways to access this presentation:
+1) Clone the repository, change to app1_presentation directory, run npm install, and grunt serve
+2) Clone the repository, and run docker or docker-compose as per the directions below
+3) Browse to http://play-with-docker.com follow either step above
+
+For example: 
+* Browse to http://play-with-docker.com
+* Start an instance
+* git clone https://github.com/glennantoine/docker-presentation.git docker
+* cd docker
+* docker-compose up -d
+
+
+Running Multiple docker nginx images 
 * Note: If using Play-with-Docker the exposed ports will be displayed near the top of the page 
 
 Without docker-compose:
