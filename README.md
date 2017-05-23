@@ -8,9 +8,9 @@ There are several ways to access this presentation:
 
 ---
 For example: 
-* Browse to http://play-with-docker.com
+* Browse to [http://play-with-docker.com](http://play-with-docker.com)
 * Start an instance
-* git clone https://github.com/glennantoine/docker-presentation.git docker
+* git clone [https://github.com/glennantoine/docker-presentation.git](https://github.com/glennantoine/docker-presentation.git) docker
 * cd docker
 * docker-compose up -d
 
