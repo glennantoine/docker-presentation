@@ -4,7 +4,7 @@ Docker Presentation: docker-nginx
 There are several ways to access this presentation:
 1) Clone the repository, change to app1_presentation directory, run npm install, and grunt serve
 2) Clone the repository, and run docker or docker-compose as per the directions below
-3) Browse to http://play-with-docker.com follow either step above
+3) Browse to [http://play-with-docker.com](http://play-with-docker.com) follow either step above
 
 ---
 For example: 
