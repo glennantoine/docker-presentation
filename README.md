@@ -43,7 +43,8 @@ docker build --tag app2_demosite  --file Dockerfile.app2 .
 docker run --detach --name app1_presentation --publish 8081:80 app1_presentation:latest
 docker run --detach --name app2_demosite --publish 8082:80 app2_demosite:latest
 
-# Use the below URLs in your browser
+# Use the below URLs in your browser if running locally
+# If using play-with-docker click the port numbers near the top of the page
 App1 (Presentation):
 http://localhost:8081
 
