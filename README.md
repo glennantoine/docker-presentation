@@ -2,9 +2,26 @@ Docker Presentation: docker-nginx
 =================================
 
 There are several ways to access this presentation:
-1) Clone the repository, change to app1_presentation directory, run npm install, and grunt serve
-2) Clone the repository, and run docker or docker-compose as per the directions below
-3) Browse to [http://play-with-docker.com](http://play-with-docker.com) follow either step above
+1) Browse to [http://play-with-docker.com](http://play-with-docker.com), download & run the docker image. (Easiest)
+2) Clone the repository, change to app1_presentation directory, run npm install, and grunt serve
+3) Clone the repository, and run docker or docker-compose as per the directions below
+4) Browse to [http://play-with-docker.com](http://play-with-docker.com) follow either step above
+
+--- 
+### Running Multiple docker nginx images 
+* Note: If using Play-with-Docker the available ports will be displayed near the top of the page 
+
+#### From Play-with-Docker.com (Option 1)
+
+```bash
+
+# run containers
+docker run --detach --name app1_presentation --publish 8081:80 rgantoine/docker-presentation:latest
+docker run --detach --name app2_demosite --publish 8082:80 rgantoine/docker-presentation:demosite
+
+```
+
+#### Starting w/ Source Code by Cloning the Git Repo
 
 ---
 For example: 
@@ -14,12 +31,9 @@ For example:
 * cd docker
 * docker-compose up -d
 
-
-### Running Multiple docker nginx images 
-* Note: If using Play-with-Docker the available ports will be displayed near the top of the page 
-
 --- 
 #### Without docker-compose:
+
 ```bash
 # build images
 docker build --tag app1_presentation  --file Dockerfile.app1 .
@@ -48,7 +62,9 @@ docker rm app1_presentation app2_demosite
 docker rmi app1_presentation app2_demosite
 ```
 --- 
+
 #### With docker-compose:
+
 ```bash
 # create and start containers
 docker-compose up -d
@@ -69,7 +85,9 @@ docker-compose stop
 docker-compose rm -f
 ```
 --- 
+
 #### Cleaning Up your local docker environment:
+
 ```bash
 
 # Generally safe cleanup commands
